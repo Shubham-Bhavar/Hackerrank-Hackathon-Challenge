@@ -1,58 +1,53 @@
 # Multi-Modal Evidence Review
 
-An AI-powered claim verification system that evaluates damage claims for **cars**, **laptops**, and **packages** using image evidence, claim conversations, user history, and evidence requirements.
+A multimodal AI system for automated damage-claim verification. The platform combines computer vision, natural language processing, and risk assessment techniques to evaluate claims using image evidence, claim conversations, user history, and evidence requirements.
 
-The system extracts the reported damage, analyzes submitted images, identifies visible issues and affected parts, assesses evidence sufficiency, and determines whether the claim is **Supported**, **Contradicted**, or **Insufficient Evidence**.
+## Key Capabilities
 
-## Features
-
-- Claim extraction from user conversations
-- Image-based damage detection and classification
-- Object part identification
-- Evidence sufficiency evaluation
+- Claim extraction using NLP/LLMs
+- Visual damage detection and classification
+- Object-part localization and analysis
+- Evidence sufficiency assessment
+- Support / Contradict / Insufficient Evidence prediction
 - Severity estimation
-- Risk flagging (image quality, authenticity, mismatch, user history)
-- Evidence-grounded justifications
-- Automated CSV result generation
+- Risk scoring and anomaly detection
+- Structured CSV output generation
 
 ## Tech Stack
 
-```text
-Python
-Pandas
-OpenCV
-PyTorch
-Vision Language Models (VLMs)
-Large Language Models (LLMs)
-```
+### Development
+- Python
+- VS Code
+- Git
+- GitHub
+- OpenAI Codex
+- Claude Code
 
-## Workflow
+### AI & Data Processing
+- Pandas
+- OpenCV
+- PyTorch
+- Vision Language Models (VLMs)
+- Large Language Models (LLMs)
 
-```text
-Claim Conversation
-        │
-        ▼
- Claim Extraction
-        │
-        ▼
-  Image Analysis
-        │
-        ▼
-Damage & Part Detection
-        │
-        ▼
-Evidence Evaluation
-        │
-        ▼
-Risk Assessment
-        │
-        ▼
-Decision Generation
-        │
-        ▼
-     output.csv
-```
+## Processing Pipeline
+
+1. Extract damage claims from conversations.
+2. Analyze submitted images using vision models.
+3. Identify object type, affected part, and damage category.
+4. Compare visual evidence with claim statements.
+5. Evaluate evidence sufficiency and image quality.
+6. Incorporate user-history risk indicators.
+7. Generate claim decision, severity level, and justification.
+8. Export structured results to `output.csv`.
 
 ## Output
 
-Generates a structured `output.csv` containing claim decisions, supporting image IDs, severity levels, risk flags, and concise evidence-based justifications.
+Produces structured claim assessments containing:
+- Claim Decision
+- Damage Type
+- Affected Part
+- Severity Level
+- Supporting Image IDs
+- Risk Flags
+- Evidence-Based Justification
