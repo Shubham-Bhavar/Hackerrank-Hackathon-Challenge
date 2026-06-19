@@ -98,7 +98,7 @@ The platform streamlines evidence review by combining multiple modalities into a
 
 ## Contributors
 
-- Your Name
+- Shubham Bhavar
 
 ## License
 
